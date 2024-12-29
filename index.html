@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio Miguel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="codigo.js" defer></script>
+</head>
+<body>
+
+    <!-- MENU ENCABEZADO -->
+
+    <header>
+        <div>
+           <h1>Bienvenidos a mi Portfolio </h1>
+            <h2>Miguel Bucciero</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#Sobremi">Sobre mí</a></li>
+                <li><a href="#aptitudes">Aptitudes</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SOBRE MI -->
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenedor-sobremi">
+            <div class="imgPerfil">
+                <img src="https://i.ibb.co/GTVwdZ1/FOTO-DE-PERFIL-300x300.png" alt="Foto de perfil">
+            </div>
+            <h2 class="txt-sobremi">Sobre mí</h2>
+            <p class="txt-p1">¡Hola!, me llamo Miguel Angel. Soy estudiante en la UTN FRGP, cursando actualmente el segundo cuatrimestre</p>
+            <p class="txt-p2">en la carrera de Tecnicatura Universitaria en programación. Tengo conocimientos en C++, C#, HTML, CSS, JavaScript y SQL.</p>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/buccieromiguel/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/miguelbucciero" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:miguelbucciero@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- APTITUDES -->
+
+    <section id="aptitudes" class="aptitudes">
+        <h1>Aptitudes</h1>
+        <div class="contenido-aptitudes">
+            <div class="lista-aptitudes">
+                <table>
+                    <tr>
+                        <td><h2>C++</h2><img src="https://i.ibb.co/6N89rgn/LOGO-CPP.png" alt="C++" class="logo1"></td>
+                        <td><h2>C#</h2><img src="https://i.ibb.co/D7BMXb6/LOGO-csharp.png" alt="C#" class="logo1"></td>
+                    </tr>
+                    <tr>
+                        <td><h2>SQL</h2><img src="https://i.ibb.co/brBQqL2/LOGO-SQL.png" alt="SQL" class="logo2"></td>
+                        <td><h2>HTML,CSS y JavaScript</h2><img src="https://i.ibb.co/HX3c4Yv/LOGO-HTML.png" alt="HTML" class="logo2"></td>
+                    </tr>
+                </table>
+            </div>
+    </section>
+
+     <!-- CURSOS -->
+
+    <section id="cursos" class="cursos">
+        <h1>Cursos realizados</h1>
+        <div class="contenido-cursos">
+            <div>
+                <tr>
+                    <td>
+                        <h3>Curso C# Nivel 1 (Desde Cero)</h3> 
+                        <p>Aprendí las bases de la programación estructurada en C#.</p>
+                        <a href="https://i.ibb.co/gr3Jx3J/Certificado-Curso-C-Nivel-1-Desde-Cero-Miguel-Angel-Bucciero.jpg" target="_blank"><img src="https://i.ibb.co/wBbW1HV/curso-csharp.jpg"  class="cursoImg"></a>
+                    </td>
+                    <td>
+                        <h3>Experiencia Universidad [Noviembre 2024]</h3>
+                        <p>Cursando actualmente...</p><img src="https://i.ibb.co/yYH8HB0/curso.png"  class="cursoImg">
+                    </td>
+                </tr>
+            </div>
+            
+    </section>
+
+    <!-- PROYECTOS -->
+
+    <section id="proyectos" class="proyectos">
+        <h1> Mis Proyectos</h1>
+        <div class="contenido-projectos">
+            <div class="projecto1">
+                <h3>Aplicación de escritorio en C#</h3>
+                <p>Aplicación de escritorio para gestión de artículos con base de datos SQL Server.</p>
+                <a href="https://github.com/MiguelBucciero/tp-winform-equipo-a" target="_blank">
+                    <img src="https://i.ibb.co/dfnZpwt/proyecto1.jpg"  class="proyectoImg" >
+                </a>
+            </div>
+            <div class="projecto2">
+                <h3>Juego de Dados por consola C++</h3>
+                <p>Juego para aplicación de consola en C++.</p>
+                <a href="https://github.com/MiguelBucciero/juego_Dados" target="_blank"> 
+                    <img src="https://i.ibb.co/mc8zCTW/proyecto2.jpg"  class="proyectoImg" >
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACTO -->
+
+    <section id="contacto" class="contacto">
+        <h1>Contacto</h1>
+        <div class="contenido-contacto">
+            <p>Puedes contactarme a través de mi correo electrónico: <a href="mailto:miguelbucciero@gmail.com">miguelbucciero@gmail.com</a></p>
+            <input type="text" id="txtNombre" placeholder="Tú Nombre" >
+            <input type="text" id="txtCorreo"placeholder="Dirección de correo"> 
+            <textarea type="text" id="txtCuadro"class="txtCuadro"cols="91" rows="20" placeholder="Mensaje"></textarea>
+            <button onclick="enviarMensaje()">Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+        <div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <a href="https://www.linkedin.com/in/buccieromiguel/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/miguelbucciero"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:miguelbucciero@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </ul>
+        <p>&copy; Desarrollado por Miguel Bucciero 2024 </p>
+    </footer>
+</body>
+</html>
