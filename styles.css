@@ -79,8 +79,14 @@ nav ul li a {
     overflow:hidden;
     margin: 0 auto;
     border: 10px solid #ce7a31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgPerfil img {
+    width: 100%;
+    height: auto;
     display: block;
-    margin: auto;
 }
 
 /*APTITUDES*/
@@ -209,10 +215,10 @@ a img:focus, a img:active{
     text-align: center;
     font-weight: bold;
 }
-.contacto input{
-    width: 100%;
+.contacto input, .contacto textarea {
+    width: 70%; 
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px auto; 
     border: 2px solid #ce7a31;
     display: block;
 }
@@ -220,6 +226,7 @@ a img:focus, a img:active{
     resize: none;
     border: 2px solid #ce7a31;
     font-size: 16px;
+    height: 150px;
 }
 .contacto button{
     cursor: pointer;
@@ -270,4 +277,55 @@ footer a {
 }
 footer a:hover{
     background-color: #ce7a31;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .contenedor-sobremi {
+        padding: 100px 0;
+    }
+    .imgPerfil {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid #ce7a31;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgPerfil img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .aptitudes, .cursos, .proyectos, .contacto {
+        height: auto;
+        padding: 20px;
+    }
+    .contenido-aptitudes {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .lista-aptitudes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo1, .logo2 {
+        width: 80px;
+        margin: 10px 0;
+    }
+    .contenido-contacto {
+        width: 90%;
+    }
+    .cursoImg, .proyectoImg {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .contacto input, .contacto textarea {
+        width: 100%;
+    }
 }
